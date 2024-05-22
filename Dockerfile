@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
   git \
   python3-yaml
 
-RUN pip3 install PyYAML --no-build-isolation
+#RUN pip3 install PyYAML --no-build-isolation
 
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
