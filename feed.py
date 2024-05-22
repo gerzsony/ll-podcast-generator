@@ -2,7 +2,7 @@ import yaml # Import the PyYAML package
 import xml.etree.ElementTree as xml_tree # Import the ElementTree module from the xml.etree package
 
 # Load YAML data from file
-with open('feed.yaml', 'r') as file:
+with open('./feed.yaml', 'r') as file:
     yaml_data = yaml.safe_load(file) # Use the safe_load() function to load the YAML data from the file
 
 # Create RSS element with appropriate attributes and namespaces
